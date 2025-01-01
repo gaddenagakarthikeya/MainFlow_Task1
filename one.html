@@ -1,0 +1,91 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Smart Farming</title>  
+  <style>   
+    body {  
+      font-family: 'Arial', sans-serif;  
+      margin: 0;  
+      padding: 0;  
+      color: #fff;  
+      background: url('tas.png') no-repeat center center fixed;  
+      background-size: cover;  
+      display: flex;  
+      flex-direction: column;  
+      min-height: 100vh;  
+      text-align: center;  
+    }  
+    header {  
+      padding: 20px;  
+      background: rgba(0, 0, 0, 0.5);  
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+      position: sticky;  
+      top: 0;  
+      z-index: 1000;  
+    }  
+    header h1 {  
+      font-size: 2.5rem;  
+      animation: glow 2s infinite alternate;  
+    }  
+    button {  
+      padding: 15px 30px;  
+      margin: 10px;  
+      border: none;  
+      border-radius: 25px;  
+      background: linear-gradient(to right, #aea639, #9baf33);  
+      color: #fff;  
+      font-size: 1rem;  
+      font-weight: bold;  
+      cursor: pointer;  
+      transition: transform 0.2s, box-shadow 0.3s;  
+    }  
+    button:hover {  
+      transform: scale(1.1);  
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);  
+    }  
+    section {  
+      padding: 20px 10%;  
+    }  
+    section h2 {  
+      font-size: 2rem;  
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);  
+      margin-bottom: 20px;  
+    }  
+    footer {  
+      background: rgba(0, 0, 0, 0.7);  
+      padding: 20px;  
+      margin-top: auto;  
+      font-size: 1.5rem;  
+      box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);  
+      color: #ffeb3b;  
+    }  
+
+    /* Animations */  
+    @keyframes glow {  
+      from { text-shadow: 0 0 10px #ffeb3b, 0 0 20px #ffeb3b; }  
+      to { text-shadow: 0 0 20px #ffeb3b, 0 0 40px #ffeb3b; }  
+    }  
+  </style>  
+</head>  
+<body>  
+  <header>  
+    <h1>🌱 Smart Farming 🌾</h1>  
+  </header>  
+
+  <section id="features">  
+    <h2>Features</h2>  
+    <button>Soil Monitoring</button>  
+    <button>Weather Updates</button>  
+    <button>Auto Irrigation</button>  
+    <button>Crop Health Monitoring</button>  
+    <button>Pest Detection</button>  
+    <button>Yield Forecasting</button>  
+  </section>  
+
+  <footer>  
+    <p>🌟 Plant the seeds of innovation for a sustainable farming future 🌟</p>  
+  </footer>  
+</body>  
+</html>
