@@ -3,7 +3,7 @@
 <head>  
   <meta charset="UTF-8">  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-  <title>Smart Farming</title>  
+  <title>Farmer Friend</title>  
   <style>   
     body {  
       font-family: 'Arial', sans-serif;  
@@ -62,6 +62,39 @@
       color: #ffeb3b;  
     }  
 
+    nav {  
+      display: inline-block;  
+      position: relative;  
+    }  
+    ul {  
+      list-style-type: none;  
+      padding: 0;  
+      margin: 0;  
+      position: absolute;  
+      background: rgba(0, 0, 0, 0.9);  
+      display: none;  
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);  
+      border-radius: 10px;  
+      overflow: hidden;  
+    }  
+    li {  
+      padding: 10px 20px;  
+      color: #fff;  
+      cursor: pointer;  
+      display: flex;  
+      align-items: center;  
+    }  
+    li:hover {  
+      background: rgba(255, 255, 255, 0.2);  
+    }  
+    li span {  
+      margin-right: 10px;  
+      font-size: 1.2rem;  
+    }  
+    nav:hover ul {  
+      display: block;  
+    }  
+
     /* Animations */  
     @keyframes glow {  
       from { text-shadow: 0 0 10px #ffeb3b, 0 0 20px #ffeb3b; }  
@@ -71,7 +104,7 @@
 </head>  
 <body>  
   <header>  
-    <h1>🌱 Smart Farming 🌾</h1>  
+    <h1>🌱Farmer Friend🌾</h1>  
   </header>  
 
   <section id="features">  
@@ -80,8 +113,16 @@
     <button>Weather Updates</button>  
     <button>Auto Irrigation</button>  
     <button>Crop Health Monitoring</button>  
-    <button>Pest Detection</button>  
-    <button>Yield Forecasting</button>  
+    <nav>  
+      <button>Pest Detection</button>  
+      <ul>  
+        <li><span>🐜</span>Aphids</li>  
+        <li><span>🐞</span>Beetles</li>  
+        <li><span>🦋</span>Moths</li>  
+        <li><span>🐛</span>Cutworm</li>  
+      </ul>  
+    </nav>  
+   
   </section>  
 
   <footer>  
